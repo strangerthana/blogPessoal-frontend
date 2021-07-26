@@ -16,9 +16,17 @@ ul.social-network li{
 }
 
 .fa-linkedin-square:hover{
-    color: #000;
+    color: #FEE2B3;
 }
 
 .fa-github-square:hover{
-    color: #000;
+    color: #FEE2B3;
+}
+
+.page-footer{
+    background-color: #AD6989;
+}
+
+.footer-copyright{
+    background-color: #c481a0;
 }
