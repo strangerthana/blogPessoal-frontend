@@ -14,10 +14,10 @@ export class AuthService {
     ) { }
 
   entrar(usuarioLogin: UsuarioLogin) : Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://strangerthana.herokuapp.com/usuarios/logar', UsuarioLogin)
+    return this.http.post<UsuarioLogin>('https://strangerthana.herokuapp.com/usuarios/logar', usuarioLogin)
   }
   
   cadastrar(usuario: Usuario) : Observable<Usuario>{
-    return this.http.post<Usuario>('https://backendthiagofaccipieri.herokuapp.com/usuarios/cadastrar', Usuario)
+    return this.http.post<Usuario>('https://strangerthana.herokuapp.com/usuarios/cadastrar', usuario)
   }
 }

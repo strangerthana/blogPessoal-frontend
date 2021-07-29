@@ -9,6 +9,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     MenuComponent,
     RodapeComponent,
     EntrarComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

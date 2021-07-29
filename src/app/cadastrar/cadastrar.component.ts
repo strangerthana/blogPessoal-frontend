@@ -10,7 +10,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: Usuario = new Usuario
+  usuario: Usuario = new Usuario
   confirmarSenha: string
   tipoDoUsuario: string
 
@@ -33,13 +33,13 @@ export class CadastrarComponent implements OnInit {
   }
 
   cadastrar(){
-    this.user.tipo = this.tipoDoUsuario
-    if(this.user.senha != this.confirmarSenha){
+    this.usuario.tipo = this.tipoDoUsuario
+    if(this.usuario.senha != this.confirmarSenha){
       alert('As senhas estão incorretas.')
     }
     else{
-      this.authService.cadastrar(this.user).subscribe((resp: Usuario) => {
-        this.user = resp
+      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
+        this.usuario = resp
         this.router.navigate(['/entrar'])
         alert('Usuário cadastrado com sucesso!')
       })
